@@ -1,8 +1,7 @@
 const express = require('express');
 const app = new express();
-const chalk = require('chalk');
 const pages = __dirname + '/pages';
-
+const chalk = require('chalk');
 app.get('/', async function(req, res) {
     res.sendFile(pages + '/index.html');
 });
