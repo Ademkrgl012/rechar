@@ -28,7 +28,7 @@
     "ytdl-core": "^4.11.0"
   },
   "engines": {
-    "node": "16.x"
+    "node": "12.x"
   },
   "repository": {
     "url": "https://glitch.com/edit/#!/hello-express"
@@ -38,5 +38,7 @@
     "node",
     "glitch",
     "express"
-  ]
+  ],
+  "devDependencies": {},
+  "author": "wenzy.fy#0031"
 }
