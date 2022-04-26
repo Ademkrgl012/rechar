@@ -2,16 +2,16 @@ dependencies:
   '@discordjs/opus': 0.7.0
   chalk: 4.1.2
   colon-notation: 1.2.1
-  discord-buttons: 4.0.0
+  discord-buttons: 3.2.1
   discord-tts: 1.2.1
   discord.js: 12.5.3
-  distube: 3.3.4
-  dotenv: 16.0.0
+  distube: 2.8.18
+  dotenv: 10.0.0
   express: 4.18.0
   ffmpeg: 0.0.4
-  ffmpeg-static: 5.0.0
+  ffmpeg-static: 4.4.1
   figlet: 1.5.2
-  fs: 0.0.2
+  fs: 0.0.1-security
   lyrics-finder: 21.7.0
   quick.db: 7.1.3
   string-progressbar: 1.0.4
@@ -68,33 +68,32 @@ packages:
     requiresBuild: true
     resolution:
       integrity: sha512-3Xxa3dh7taSDwBAR5fLALZ/KTxvbMmHCMxYLYve6NlPO7Ms1CLmKqp/R4ZoVzkRGQVUVWEhaB1s0v9jfa2tfDg==
-  /@distube/youtube-dl/2.2.4:
+  /@distube/youtube-dl/1.0.4:
     dependencies:
-      dargs: 7.0.0
-      execa: 5.1.1
-      get-stream: 6.0.1
+      execa: 5.0.1
       got: 11.8.3
-      is-unix: 1.0.1
+      hh-mm-ss: 1.2.0
       mkdirp: 1.0.4
-      p-event: 4.2.0
-      p-reflect: 2.1.0
+      streamify: 1.0.0
+      universalify: 2.0.0
     deprecated: Use '@distube/yt-dlp' instead
     dev: false
     engines:
-      node: '>= 12'
+      node: '>= 10'
     requiresBuild: true
     resolution:
-      integrity: sha512-rGmnVqNF6LjGb5zpSLicLgeK9MbIJ/wOJ6Zl5g9V44Cnfkxfk76VNtzd9wNp3JPdWPa9aD9HUsMA4H72Z9ZoiQ==
-  /@distube/ytdl-core/4.11.3:
+      integrity: sha512-dvspiNhCIry/LPm9EkHPgGk8bTBfrENH282jNzwz5EAnn+xZF+wCDk9033fnVBY5RA1sPKSUol2MeQHgRD5/zQ==
+  /@distube/ytdl/2.0.6/ytdl-core@4.11.0:
     dependencies:
-      m3u8stream: 0.8.6
-      miniget: 4.2.2
-      sax: 1.2.4
+      prism-media: 1.3.2
+      ytdl-core: 4.11.0
+    deprecated: This package will not be updated anymore.
     dev: false
-    engines:
-      node: '>=12'
+    id: registry.npmjs.org/@distube/ytdl/2.0.6
+    peerDependencies:
+      ytdl-core: 4.x
     resolution:
-      integrity: sha512-vgLdpGjVQQH7Y5PCpoUa2GuALwrAsMvrU/dxd/KI/YmkVBH0qm/nG9d3tOQvydKF/PLBk26jY+rOjFm6mqzJkg==
+      integrity: sha512-O8rm4Uh/R+zTZoZj+F2qtFbYGi4peGMs7qHbYKb+9z5gZ2id/MGTXpXlSVVn+49nkff109AflaLSJykI2BRd8A==
   /@distube/ytpl/1.1.1:
     dependencies:
       miniget: 4.2.2
@@ -613,12 +612,6 @@ packages:
     dev: false
     resolution:
       integrity: sha512-m62ShEObQ39CfralilEQRjH6oAMtNCV1xJyEx5LpRYUVN+EviphDgUc/F3hnYbADmkiNs67Y+3ylmlG7Lnu+FA==
-  /dargs/7.0.0:
-    dev: false
-    engines:
-      node: '>=8'
-    resolution:
-      integrity: sha512-2iy1EkLdlBzQGvbweYRFxmFath8+K7+AKB0TlhHWkNuH+TmovaMH/Wp7V7R4u7f4SnX3OgLsU9t1NI9ioDnUpg==
   /dasu/0.4.3:
     dev: false
     resolution:
@@ -693,11 +686,11 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-463v3ZeIrcWtdgIg6vI6XUncguvr2TnGl4SzDXinkt9mSLpBJKXT3mW6xT3VQdDN11+WVs29pgvivTc4Lp8v+w==
-  /discord-buttons/4.0.0:
+  /discord-buttons/3.2.1:
     deprecated: 'New lib is coming! Join our support server for more help: https://discord.gg/KUS5pjyA4J'
     dev: false
     resolution:
-      integrity: sha512-E/eQX4Ktj7nKwNDsTfCezBNCu73FtPWJfQcpKohfl0jct/ucMUO+7uhL2MhGsZr4SCfojk7OzccAznuntB564w==
+      integrity: sha512-UN5xOLG0TwTX6Qr/hjdSyP63HxOYxs5saxfdJ/vijSqjfa/yVPgxO2InKF0l8rpsDOVMsLWGDFLI3+Ax97/LOg==
   /discord-tts/1.2.1:
     dependencies:
       google-tts-api: 2.0.2
@@ -720,23 +713,21 @@ packages:
       node: '>=12.0.0'
     resolution:
       integrity: sha512-D3nkOa/pCkNyn6jLZnAiJApw2N9XrIsXUAdThf01i7yrEuqUmDGc7/CexVWwEcgbQR97XQ+mcnqJpmJ/92B4Aw==
-  /distube/3.3.4:
+  /distube/2.8.18:
     dependencies:
-      '@distube/youtube-dl': 2.2.4
-      '@distube/ytdl-core': 4.11.3
+      '@distube/youtube-dl': 1.0.4
+      '@distube/ytdl': /@distube/ytdl/2.0.6/ytdl-core@4.11.0
       '@distube/ytpl': 1.1.1
       '@distube/ytsr': 1.1.5
-      prism-media: 'codeload.github.com/distubejs/prism-media/tar.gz/main#workaround.tar.gz'
-      tiny-typed-emitter: 2.1.0
+      ytdl-core: 4.11.0
+    deprecated: Update to latest version instead
     dev: false
     engines:
-      node: '>=12.0.0'
+      node: '>=12'
     peerDependencies:
-      '@discordjs/opus': '*'
-      '@discordjs/voice': '>=0.5.6'
-      discord.js: ^12.5.0||13.x
+      discord.js: '12'
     resolution:
-      integrity: sha512-izJFDL1dfTzPgTXZbGavyDXDnodkuykVGFSWuFPL9EY83et/qhjQFosLwYoWTJWQN8tG6KPUc5wPi4EZxxy/4g==
+      integrity: sha512-3TXDyxk+XyAx24ip2uT5tnsyZNasaxHKn09pCDBuBf8LgZw+5sJtzJpoPpDpbbQbcCc4rSVkuGHblchiC3QRNg==
   /dom-serializer/0.2.2:
     dependencies:
       domelementtype: 2.3.0
@@ -789,12 +780,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-w96Cjofp72M5IIhpjgobBimYEfoPjx1Vx0BSX9P30WBdZW2WIKU0T1Bd0kz2eNZ9ikjKgHbEyKx8BB6H1L3h3A==
-  /dotenv/16.0.0:
+  /dotenv/10.0.0:
     dev: false
     engines:
-      node: '>=12'
+      node: '>=10'
     resolution:
-      integrity: sha512-qD9WU0MPM4SWLPJy/r2Be+2WgQj8plChsyrCNQzW/0WjvcJQiKQJ9mH3ZgB3fxbUUxgc/11ZJ0Fi5KiimWGz2Q==
+      integrity: sha512-rlBi9d8jpv9Sf1klPjNfFAuWDjKLwTIJJ/VxtoTwIR6hnZxcEOQCZg2oIL3MWBYw5GpUDKOEnND7LXTbIpQ03Q==
   /ee-first/1.1.1:
     dev: false
     resolution:
@@ -893,7 +884,7 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-i/2XbnSz/uxRCU6+NdVJgKWDTM427+MqYbkQzD321DuCQJUqOuJKIA0IM2+W2xtYHdKOmZ4dR6fExsd4SXL+WQ==
-  /execa/5.1.1:
+  /execa/5.0.1:
     dependencies:
       cross-spawn: 7.0.3
       get-stream: 6.0.1
@@ -908,7 +899,7 @@ packages:
     engines:
       node: '>=10'
     resolution:
-      integrity: sha512-8uSpZZocAZRBAPIEINJj3Lo9HyGitllczc27Eh5YYojjMFMn8yHMDMaUHE2Jqfq05D/wucwI4JGURyXt1vchyg==
+      integrity: sha512-4hFTjFbFzQa3aCLobpbPJR/U+VoL1wdV5ozOWjeet0AWDeYr9UFGM1eUFWHX+VtOWFq4p0xXUXfW1YxUaP4fpw==
   /expand-template/2.0.3:
     dev: false
     engines:
@@ -959,7 +950,7 @@ packages:
     dev: false
     resolution:
       integrity: sha512-sdBImtzkq2HpkdRLtlLWDa6w4DX22ijZLKx8BMPUuKe1c5lbN6xwQDQCxSfxBQnHZ13ls/FH0MQZx/q/gr6FQg==
-  /ffmpeg-static/5.0.0:
+  /ffmpeg-static/4.4.1:
     dependencies:
       '@derhuerst/http-basic': 8.2.2
       env-paths: 2.2.1
@@ -967,10 +958,10 @@ packages:
       progress: 2.0.3
     dev: false
     engines:
-      node: '>=16'
+      node: '>=10'
     requiresBuild: true
     resolution:
-      integrity: sha512-z96jGVa8uCVMnyrTvbDZe0d5zbvIVQnfBN+vKDZoVK+ssYpfUJGEmo2DkuY43CA9Ytlsk+5ZVTFTqzvKw1gSaA==
+      integrity: sha512-gyGTIf5kgmLDmH7Rwj8vMmNK46bjXKKofHS2gY+LUqoTe/iybVuTuvnhJQR2tZHlKlDG7A/BIH7cRa2jWDKgWw==
   /ffmpeg/0.0.4:
     dependencies:
       when: 3.7.8
@@ -1035,10 +1026,10 @@ packages:
     dev: false
     resolution:
       integrity: sha1-FQStJSMVjKpA20onh8sBQRmU6k8=
-  /fs/0.0.2:
+  /fs/0.0.1-security:
     dev: false
     resolution:
-      integrity: sha1-4fJE7zkzwbKmS9R5kTYGDQ9ZFPg=
+      integrity: sha1-invTcYa23d84E/I4WLV+yq9eQdQ=
   /function-bind/1.1.1:
     dev: false
     resolution:
@@ -1162,6 +1153,12 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==
+  /hh-mm-ss/1.2.0:
+    dependencies:
+      zero-fill: 2.2.4
+    dev: false
+    resolution:
+      integrity: sha512-f4I9Hz1dLpX/3mrEs7yq30+FiuO3tt5NWAqAGeBTaoeoBfB8vhcQ3BphuDc5DjZb/K809agqrAaFlP0jhEU/8w==
   /html-to-text/5.1.1:
     dependencies:
       he: 1.2.0
@@ -1315,12 +1312,6 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-hFoiJiTl63nn+kstHGBtewWSKnQLpyb155KHheA1l39uvtO9nWIop1p3udqPcUd/xbF1VLMO4n7OI6p7RbngDg==
-  /is-unix/1.0.1:
-    dev: false
-    engines:
-      node: '>= 12'
-    resolution:
-      integrity: sha512-8Iu9y/xCBmg1uwWV3J/jNl3udPHPAYyqGv4OKE/70O10U2qmt1v3/SRhSAW5+GiRpU2yZEnl+z1Oxm4A8arVrA==
   /isarray/1.0.0:
     dev: false
     resolution:
@@ -1685,34 +1676,6 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-BZOr3nRQHOntUjTrH8+Lh54smKHoHyur8We1V8DSMVrl5A2malOOwuJRnKRDjSnkoeBh4at6BwEnb5I7Jl31wg==
-  /p-event/4.2.0:
-    dependencies:
-      p-timeout: 3.2.0
-    dev: false
-    engines:
-      node: '>=8'
-    resolution:
-      integrity: sha512-KXatOjCRXXkSePPb1Nbi0p0m+gQAwdlbhi4wQKJPI1HsMQS9g+Sqp2o+QHziPr7eYJyOZet836KoHEVM1mwOrQ==
-  /p-finally/1.0.0:
-    dev: false
-    engines:
-      node: '>=4'
-    resolution:
-      integrity: sha1-P7z7FbiZpEEjs0ttzBi3JDNqLK4=
-  /p-reflect/2.1.0:
-    dev: false
-    engines:
-      node: '>=8'
-    resolution:
-      integrity: sha512-paHV8NUz8zDHu5lhr/ngGWQiW067DK/+IbJ+RfZ4k+s8y4EKyYCz8pGYWjxCg35eHztpJAt+NUgvN4L+GCbPlg==
-  /p-timeout/3.2.0:
-    dependencies:
-      p-finally: 1.0.0
-    dev: false
-    engines:
-      node: '>=8'
-    resolution:
-      integrity: sha512-rhIwUycgwwKcP9yTOOFK/AKsAopjjCakVqLHePO3CC6Mir1Z99xT+R63jZxAT5lFZLa2inS5h+ZS2GvR99/FBg==
   /parse-cache-control/1.0.1:
     dev: false
     resolution:
@@ -2015,6 +1978,12 @@ packages:
       node: '>= 0.8'
     resolution:
       integrity: sha512-RwNA9Z/7PrK06rYLIzFMlaF+l73iwpzsqRIFgbMLbTcLD6cOao82TaWefPXQvB2fOC4AjuYSEndS7N/mTCbkdQ==
+  /streamify/1.0.0:
+    dev: false
+    engines:
+      node: '>=6'
+    resolution:
+      integrity: sha512-pe2ZoxE+ie5wAjRgKWb5Ur4R5Oa++eoQmHLqGGy4nQn/8BetJcpHkHXRuP3ZIJ/Ptl/rbd76fdn9aQJNys8cKA==
   /string-progressbar/1.0.4:
     dev: false
     resolution:
@@ -2145,10 +2114,6 @@ packages:
     dev: false
     resolution:
       integrity: sha512-b85NUNzTSdodShTIbky6ZF02e8STtVVfD+fu4aXXShEELpozH+bCpJLYMPZbsABN2wDH7fJpqIoXxJpzbf0NqQ==
-  /tiny-typed-emitter/2.1.0:
-    dev: false
-    resolution:
-      integrity: sha512-qVtvMxeXbVej0cQWKqVSSAHmKZEHAvxdF8HEUBFWts8h+xEo5m/lEiPakuyZ3BnCBjOD8i24kzNOiOLLgsSxhA==
   /toidentifier/1.0.1:
     dev: false
     engines:
@@ -2200,6 +2165,12 @@ packages:
     dev: false
     resolution:
       integrity: sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
+  /universalify/2.0.0:
+    dev: false
+    engines:
+      node: '>= 10.0.0'
+    resolution:
+      integrity: sha512-hAZsKq7Yy11Zu1DE0OzWjw7nnLZmJZYTDZZyEFHZdUhV8FkH5MCfoU1XMaxXovpyW5nq5scPqq0ZDP9Zyl04oQ==
   /unpipe/1.0.0:
     dev: false
     engines:
@@ -2293,36 +2264,29 @@ packages:
       node: '>=12'
     resolution:
       integrity: sha512-Q3hCLiUA9AOGQXzPvno14GN+HgF9wsO1ZBHlj0COTcyxjIyFpWvMfii0UC4/cAbVaIjEdbWB71GdcGuc4J1Lmw==
-  'codeload.github.com/distubejs/prism-media/tar.gz/main#workaround.tar.gz':
+  /zero-fill/2.2.4:
     dev: false
-    name: prism-media
-    peerDependencies:
-      '@discordjs/opus': '*'
-      ffmpeg-static: ^4.2.7 || ^3.0.0 || ^2.4.0
-      node-opus: ^0.3.3
-      opusscript: ^0.0.8
     resolution:
-      tarball: 'https://codeload.github.com/distubejs/prism-media/tar.gz/main#workaround.tar.gz'
-    version: 1.3.3
+      integrity: sha512-/N5GEDauLHz2uGnuJXWO1Wfib4EC+q4yp9C1jojM7RubwEKADqIqMcYpETMm1lRop403fi3v1qTOdgDE8DIOdw==
 registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
   '@discordjs/opus': ^0.7.0
-  chalk: ^4.1.0
+  chalk: ^4.1.1
   colon-notation: ^1.2.1
-  discord-buttons: ^4.0.0
-  discord-tts: ^1.2.1
+  discord-buttons: ^3.2.1
+  discord-tts: ^1.2.0
   discord.js: ^12.5.3
-  distube: ^3.3.4
-  dotenv: ^16.0.0
-  express: ^4.17.3
+  distube: ^2.8.8
+  dotenv: ^10.0.0
+  express: ^4.17.1
   ffmpeg: 0.0.4
-  ffmpeg-static: ^5.0.0
-  figlet: ^1.5.2
-  fs: ^0.0.2
+  ffmpeg-static: ^4.4.0
+  figlet: ^1.5.0
+  fs: 0.0.1-security
   lyrics-finder: ^21.7.0
   quick.db: ^7.1.3
   string-progressbar: ^1.0.4
-  yt-search: ^2.10.3
-  ytdl-core: ^4.11.0
+  yt-search: ^2.9.0
+  ytdl-core: ^4.8.3
